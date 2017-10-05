@@ -68,6 +68,21 @@ class AnalyticsClient
         });
     }
 
+    /**
+     * @param string $viewId
+     * @param string $metrics
+     * @param array $others
+     * @return mixed
+     */
+    public function performQueryReal(string $viewId, string $metrics, array $others = [])
+    {
+        return $this->service->data_realtime->get(
+            "ga:{$viewId}",
+            $metrics,
+            $others
+        );
+    }
+
     public function getAnalyticsService(): Google_Service_Analytics
     {
         return $this->service;
