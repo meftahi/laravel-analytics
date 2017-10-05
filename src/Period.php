@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Analytics;
+namespace Meftahi\Analytics;
 
 use DateTime;
 use Carbon\Carbon;
-use Spatie\Analytics\Exceptions\InvalidPeriod;
+use Meftahi\Analytics\Exceptions\InvalidPeriod;
 
 class Period
 {

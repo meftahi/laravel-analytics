@@ -13,7 +13,7 @@ Using this package you can easily retrieve data from Google Analytics.
 Here are a few examples of the provided methods:
 
 ```php
-use Spatie\Analytics\Period;
+use Meftahi\Analytics\Period;
 
 //fetch the most visited pages for today and the past week
 Analytics::fetchMostVisitedPages(Period::days(7));
@@ -50,7 +50,7 @@ In Laravel 5.5 the package will autoregister the service provider. In Laravel 5.
 // config/app.php
 'providers' => [
     ...
-    Spatie\Analytics\AnalyticsServiceProvider::class,
+    Meftahi\Analytics\AnalyticsServiceProvider::class,
     ...
 ];
 ```
@@ -61,7 +61,7 @@ In Laravel 5.5 the package will autoregister the facade. In Laravel 5.4 you must
 // config/app.php
 'aliases' => [
     ...
-    'Analytics' => Spatie\Analytics\AnalyticsFacade::class,
+    'Analytics' => Meftahi\Analytics\AnalyticsFacade::class,
     ...
 ];
 ```
@@ -69,7 +69,7 @@ In Laravel 5.5 the package will autoregister the facade. In Laravel 5.4 you must
 Optionally, you can publish the config file of this package with this command:
 
 ``` bash
-php artisan vendor:publish --provider="Spatie\Analytics\AnalyticsServiceProvider"
+php artisan vendor:publish --provider="Meftahi\Analytics\AnalyticsServiceProvider"
 ```
 
 The following config file will be published in `config/analytics.php`

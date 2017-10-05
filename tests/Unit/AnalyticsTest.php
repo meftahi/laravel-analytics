@@ -1,24 +1,24 @@
 <?php
 
-namespace Spatie\Analytics\Tests;
+namespace Meftahi\Analytics\Tests;
 
 use Mockery;
 use Carbon\Carbon;
-use Spatie\Analytics\Period;
+use Meftahi\Analytics\Period;
 use PHPUnit\Framework\TestCase;
-use Spatie\Analytics\Analytics;
+use Meftahi\Analytics\Analytics;
 use Illuminate\Support\Collection;
-use Spatie\Analytics\AnalyticsClient;
+use Meftahi\Analytics\AnalyticsClient;
 
 class AnalyticsTest extends TestCase
 {
-    /** @var \Spatie\Analytics\AnalyticsClient|\Mockery\Mock */
+    /** @var \Meftahi\Analytics\AnalyticsClient|\Mockery\Mock */
     protected $analyticsClient;
 
     /** @var string */
     protected $viewId;
 
-    /** @var \Spatie\Analytics\Analytics */
+    /** @var \Meftahi\Analytics\Analytics */
     protected $analytics;
 
     /** @var \Carbon\Carbon */

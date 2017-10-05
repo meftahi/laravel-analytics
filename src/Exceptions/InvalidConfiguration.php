@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Analytics\Exceptions;
+namespace Meftahi\Analytics\Exceptions;
 
 use Exception;
 

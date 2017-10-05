@@ -35,22 +35,22 @@
   },
   "autoload": {
     "psr-4": {
-      "Spatie\\Analytics\\": "src"
+      "Meftahi\\Analytics\\": "src"
     }
   },
   "extra":{
     "laravel":{
       "providers":[
-        "Spatie\\Analytics\\AnalyticsServiceProvider"
+        "Meftahi\\Analytics\\AnalyticsServiceProvider"
       ],
       "aliases":{
-        "Analytics": "Spatie\\Analytics\\AnalyticsFacade"
+        "Analytics": "Meftahi\\Analytics\\AnalyticsFacade"
       }
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Spatie\\Analytics\\Tests\\": "tests"
+      "Meftahi\\Analytics\\Tests\\": "tests"
     }
   },
   "config": {

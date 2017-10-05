@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Analytics;
+namespace Meftahi\Analytics;
 
 use Carbon\Carbon;
 use Google_Service_Analytics;
@@ -11,14 +11,14 @@ class Analytics
 {
     use Macroable;
 
-    /** @var \Spatie\Analytics\AnalyticsClient */
+    /** @var \Meftahi\Analytics\AnalyticsClient */
     protected $client;
 
     /** @var string */
     protected $viewId;
 
     /**
-     * @param \Spatie\Analytics\AnalyticsClient $client
+     * @param \Meftahi\Analytics\AnalyticsClient $client
      * @param string                            $viewId
      */
     public function __construct(AnalyticsClient $client, string $viewId)

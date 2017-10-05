@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Analytics;
+namespace Meftahi\Analytics;
 
 use Illuminate\Support\ServiceProvider;
-use Spatie\Analytics\Exceptions\InvalidConfiguration;
+use Meftahi\Analytics\Exceptions\InvalidConfiguration;
 
 class AnalyticsServiceProvider extends ServiceProvider
 {

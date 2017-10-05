@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Analytics\Tests\Integration;
+namespace Meftahi\Analytics\Tests\Integration;
 
 use Analytics;
 use Carbon\Carbon;
-use Spatie\Analytics\Exceptions\InvalidConfiguration;
+use Meftahi\Analytics\Exceptions\InvalidConfiguration;
 
 class AnalyticsServiceProviderTest extends TestCase
 {

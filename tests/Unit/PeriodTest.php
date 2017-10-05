@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Analytics\Tests;
+namespace Meftahi\Analytics\Tests;
 
 use Carbon\Carbon;
-use Spatie\Analytics\Period;
+use Meftahi\Analytics\Period;
 use PHPUnit\Framework\TestCase;
-use Spatie\Analytics\Exceptions\InvalidPeriod;
+use Meftahi\Analytics\Exceptions\InvalidPeriod;
 
 class PeriodTest extends TestCase
 {
