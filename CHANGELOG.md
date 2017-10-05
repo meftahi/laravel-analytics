@@ -2,6 +2,9 @@
 
 All notable changes to Laravel-Analytics will be documented in this file
 
+## 3.1.1 - 2017-10-5
+ Change Package Name
+
 ## 3.1.0 - 2017-08-31
 - add compatibility with Laravel 5.5
 
