@@ -1,12 +1,12 @@
 #  Retrieve data from Google Analytics
 
-[![Latest Version](https://img.shields.io/github/release/spatie/laravel-analytics.svg?style=flat-square)](https://github.com/spatie/laravel-analytics/releases)
+[![Latest Version](https://img.shields.io/github/release/Meftahi/laravel-analytics.svg?style=flat-square)](https://github.com/Meftahi/laravel-analytics/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/spatie/laravel-analytics/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-analytics)
-[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/laravel-analytics.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-analytics)
+[![Build Status](https://img.shields.io/travis/Meftahi/laravel-analytics/master.svg?style=flat-square)](https://travis-ci.org/Meftahi/laravel-analytics)
+[![Quality Score](https://img.shields.io/scrutinizer/g/Meftahi/laravel-analytics.svg?style=flat-square)](https://scrutinizer-ci.com/g/Meftahi/laravel-analytics)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/22e652a0-01c0-4b8c-9ada-c9ba5cba17c7.svg?style=flat-square)](https://insight.sensiolabs.com/projects/22e652a0-01c0-4b8c-9ada-c9ba5cba17c7)
 [![StyleCI](https://styleci.io/repos/32067087/shield)](https://styleci.io/repos/32067087)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-analytics.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-analytics)
+[![Total Downloads](https://img.shields.io/packagist/dt/Meftahi/laravel-analytics.svg?style=flat-square)](https://packagist.org/packages/Meftahi/laravel-analytics)
 
 Using this package you can easily retrieve data from Google Analytics.
 
@@ -24,24 +24,24 @@ Analytics::fetchVisitorsAndPageViews(Period::days(7));
 
 Most methods will return an `\Illuminate\Support\Collection` object containing the results.
 
-Spatie is a webdesign agency in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
+Meftahi is a webdesign agency in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://Meftahi.be/opensource).
 
-> **If you're using v1 of this package, please refer to [an older version of this readme](https://github.com/spatie/laravel-analytics/blob/88eb75beadcd8dade2f3ee2423f3716253b2104d/README.md) for the installation and usage guide.**
+> **If you're using v1 of this package, please refer to [an older version of this readme](https://github.com/Meftahi/laravel-analytics/blob/88eb75beadcd8dade2f3ee2423f3716253b2104d/README.md) for the installation and usage guide.**
 
 ## Postcardware
 
 You're free to use this package (it's [MIT-licensed](LICENSE.md)), but if it makes it to your production environment you are required to send us a postcard from your hometown, mentioning which of our package(s) you are using.
 
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
+Our address is: Meftahi, Samberstraat 69D, 2060 Antwerp, Belgium.
 
-All postcards are published [on our website](https://spatie.be/en/opensource/postcards).
+All postcards are published [on our website](https://Meftahi.be/en/opensource/postcards).
 
 ## Installation
 
 This package can be installed through Composer.
 
 ``` bash
-composer require spatie/laravel-analytics
+composer require Meftahi/laravel-analytics
 ```
 
 In Laravel 5.5 the package will autoregister the service provider. In Laravel 5.4 you must install this service provider.
@@ -113,19 +113,19 @@ return [
 
 The first thing you’ll need to do is to get some credentials to use Google API’s. I’m assuming that you’ve already created a Google account and are signed in. Head over to [Google API’s site](https://console.developers.google.com/apis) and click "Select a project" in the header.
 
-![1](https://spatie.github.io/laravel-analytics/v2/1.jpg)
+![1](https://Meftahi.github.io/laravel-analytics/v2/1.jpg)
 
 Next up we must specify which API’s the project may consume. In the list of available API’s click "Google Analytics API". On the next screen click "Enable".
 
-![2](https://spatie.github.io/laravel-analytics/v2/2.jpg)
+![2](https://Meftahi.github.io/laravel-analytics/v2/2.jpg)
 
 Now that you’ve created a project that has access to the Analytics API it’s time to download a file with these credentials. Click "Credentials" in the sidebar. You’ll want to create a "Service account key".
 
-![3](https://spatie.github.io/laravel-analytics/v2/3.jpg)
+![3](https://Meftahi.github.io/laravel-analytics/v2/3.jpg)
 
 On the next screen you can give the service account a name. You can name it anything you’d like. In the service account id you’ll see an email address. We’ll use this email address later on in this guide. Select "JSON" as the key type and click "Create" to download the JSON file.
 
-![4](https://spatie.github.io/laravel-analytics/v2/4.jpg)
+![4](https://Meftahi.github.io/laravel-analytics/v2/4.jpg)
 
 Save the json inside your Laravel project at the location specified in the `service_account_credentials_json` key of the config file of this package. Because the json file contains potentially sensitive information I don't recommend committing it to your git repository.
 
@@ -133,21 +133,21 @@ Save the json inside your Laravel project at the location specified in the `serv
 
 I'm assuming that you've already created a Analytics account on the [Analytics site](https://analytics.google.com/analytics). Go to "User management" in the Admin-section of the property.
 
-![5](https://spatie.github.io/laravel-analytics/v2/5.jpg)
+![5](https://Meftahi.github.io/laravel-analytics/v2/5.jpg)
 
 On this screen you can grant access to the email address found in the `client_email` key from the json file you download in the previous step. Read only access is enough.
 
-![6](https://spatie.github.io/laravel-analytics/v2/6.jpg)
+![6](https://Meftahi.github.io/laravel-analytics/v2/6.jpg)
  
 ### Getting the view id
  
 The last thing you'll have to do is fill in the `view_id` in the config file. You can get the right value on the [Analytics site](https://analytics.google.com/analytics). Go to "View setting" in the Admin-section of the property.
 
-![7](https://spatie.github.io/laravel-analytics/v2/7.jpg)
+![7](https://Meftahi.github.io/laravel-analytics/v2/7.jpg)
 
 You'll need the `View ID` displayed there.
 
-![8](https://spatie.github.io/laravel-analytics/v2/8.jpg)
+![8](https://Meftahi.github.io/laravel-analytics/v2/8.jpg)
 
 ## Usage
 
@@ -240,15 +240,15 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email freek@Meftahi.be instead of using the issue tracker.
 
 ## Credits
 
 - [Freek Van der Herten](https://github.com/freekmurze)
 - [All Contributors](../../contributors)
 
-## About Spatie
-Spatie is a webdesign agency in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
+## About Meftahi
+Meftahi is a webdesign agency in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://Meftahi.be/opensource).
 
 ## License
 
