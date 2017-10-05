@@ -1,21 +1,21 @@
 {
-  "name": "spatie/laravel-analytics",
+  "name": "meftahi/laravel-analytics",
   "description": "A Laravel 5 package to retrieve Google Analytics data.",
   "keywords": [
-    "spatie",
+    "meftahi",
     "google",
     "analytics",
     "retrieve",
     "reports",
     "laravel"
   ],
-  "homepage": "https://github.com/spatie/laravel-analytics",
+  "homepage": "https://github.com/meftahi/laravel-analytics",
   "license": "MIT",
   "authors": [
     {
-      "name": "Freek Van der Herten",
-      "email": "freek@spatie.be",
-      "homepage": "https://murze.be",
+      "name": "Mojtaba Meftahi",
+      "email": "m.meftahi@gmail.com",
+      "homepage": "http://bestwp.ir",
       "role": "Developer"
     }
   ],
